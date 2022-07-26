@@ -7,7 +7,10 @@ const Nav = () => {
       {' '}
       <div className="navbar">
         <div className="dashboard-logo">
-          <div className="logo">logo</div>
+          <div className="logo">
+            <img className="logo-top" src="/images/logo1.png" alt="nono!!" />
+            <img className="logo-bottom" src="/images/logo2.png" alt="nono!!" />
+          </div>
           <div className="title">BUYING SQUARE DASHBOARD</div>
         </div>
         <div className="dashboard-type">

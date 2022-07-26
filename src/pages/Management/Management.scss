@@ -1,4 +1,118 @@
 .container {
   width: 1920px;
   height: auto;
+  background-color: #f5f5f5;
+
+  .workspace {
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 117px 0px 124px;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .title-head {
+        font-size: 32px;
+        font-weight: 600;
+        color: #121426;
+      }
+
+      .title-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #777777;
+      }
+    }
+
+    .content {
+      font-size: 14px;
+      color: #777777;
+    }
+  }
+
+  .ordertype {
+    display: flex;
+    width: 1688px;
+    height: 88px;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    margin: 30px auto;
+    background-color: #ffffff;
+
+    .order-all {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 342px;
+      height: 88px;
+      border-right: 1px solid #dbdbdb;
+
+      .type {
+        font-size: 18px;
+        color: #121426;
+        padding-left: 38px;
+      }
+
+      .type-downarrow {
+        padding-right: 34px;
+      }
+    }
+
+    .order-date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 630px;
+      border-right: 1px solid #dbdbdb;
+
+      .dates {
+        display: flex;
+        gap: 50px;
+        padding: 0px;
+        font-size: 18px;
+        color: #121426;
+        list-style: none;
+      }
+    }
+
+    .date-input {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 397px;
+      border-right: 1px solid #dbdbdb;
+
+      .date-selct {
+        display: flex;
+        gap: 10px;
+        padding-left: 43px;
+
+        .icon {
+          font-size: 20px;
+        }
+
+        .input {
+          font-size: 18px;
+          color: #121426;
+        }
+      }
+
+      .input-downarrow {
+        padding-right: 26px;
+      }
+    }
+
+    .order-check-button {
+      width: 318px;
+      border: 0px;
+      border-radius: 0px 6px 6px 0px;
+      font-size: 18px;
+      background-color: #333333;
+      color: #ffffff;
+    }
+  }
 }

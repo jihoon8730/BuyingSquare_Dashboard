@@ -9,9 +9,27 @@
 
   .dashboard-logo {
     display: flex;
+    gap: 10px;
     width: auto;
     height: 30px;
     padding-left: 125px;
+
+    .logo {
+      position: relative;
+      bottom: 4px;
+
+      .logo-top {
+        position: absolute;
+        top: 0.5px;
+        right: 5px;
+      }
+
+      .logo-bottom {
+        position: absolute;
+        top: 10px;
+        right: 2.7px;
+      }
+    }
 
     .title {
       font-size: 24px;
@@ -56,6 +74,7 @@
 
       .list-all {
         color: #121426;
+        border-bottom: 3px solid #121426;
       }
     }
   }
@@ -79,6 +98,7 @@
       width: 300px;
       height: 30px;
       border: 0px;
+      font-size: 20px;
       outline-style: none;
       &::placeholder {
         font-size: 24px;
