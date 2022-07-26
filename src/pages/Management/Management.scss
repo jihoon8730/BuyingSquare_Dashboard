@@ -1,3 +1,6 @@
+$white-color: #ffffff;
+$gray-color: #777777;
+
 .container {
   width: 1920px;
   height: auto;
@@ -24,13 +27,13 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
-        color: #777777;
+        color: $gray-color;
       }
     }
 
     .content {
       font-size: 14px;
-      color: #777777;
+      color: $gray-color;
     }
   }
 
@@ -41,7 +44,7 @@
     border: 1px solid #dbdbdb;
     border-radius: 6px;
     margin: 30px auto;
-    background-color: #ffffff;
+    background-color: $white-color;
 
     .order-all {
       display: flex;
@@ -112,7 +115,173 @@
       border-radius: 0px 6px 6px 0px;
       font-size: 18px;
       background-color: #333333;
-      color: #ffffff;
+      color: $white-color;
+    }
+  }
+
+  .transactionamount {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    .year {
+      width: 830px;
+      height: 268px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .year-price {
+        height: 176px;
+        padding: 0px 30px;
+        border-bottom: 1px solid #dbdbdb;
+
+        .price-title {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 30px;
+          font-size: 18px;
+          color: $gray-color;
+
+          .title {
+            .color-blue {
+              color: #007def;
+            }
+          }
+        }
+
+        .amount-display {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 8px;
+
+          .total-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #121426;
+          }
+
+          .outstanding-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fa5400;
+          }
+        }
+
+        .gauge-full {
+          width: 770px;
+          height: 17px;
+          margin-top: 18px;
+          background: #ebedf1;
+          border-radius: 20px;
+
+          .gauge {
+            width: 526px;
+            height: 17px;
+            background: linear-gradient(270deg, #121426 -0.64%, #007def 99.25%);
+            border-radius: 20px;
+          }
+        }
+      }
+
+      .attainment-rate {
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+          font-size: 18px;
+          color: $gray-color;
+        }
+
+        .percent {
+          font-size: 30px;
+          font-weight: 600;
+          color: #121426;
+        }
+      }
+    }
+
+    .month {
+      width: 830px;
+      height: 268px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .month-price {
+        height: 176px;
+        padding: 0px 30px;
+        border-bottom: 1px solid #dbdbdb;
+
+        .price-title {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 30px;
+          font-size: 18px;
+          color: $gray-color;
+
+          .title {
+            .color-blue {
+              color: #007def;
+            }
+          }
+        }
+
+        .amount-display {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 8px;
+
+          .total-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #121426;
+          }
+
+          .outstanding-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fa5400;
+          }
+        }
+
+        .gauge-full {
+          width: 770px;
+          height: 17px;
+          margin-top: 18px;
+          background: #ebedf1;
+          border-radius: 20px;
+
+          .gauge {
+            width: 256px;
+            height: 17px;
+            background: linear-gradient(270deg, #121426 -0.64%, #007def 99.25%);
+            border-radius: 20px;
+          }
+        }
+      }
+
+      .attainment-rate {
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+          font-size: 18px;
+          color: $gray-color;
+        }
+
+        .percent {
+          font-size: 30px;
+          font-weight: 600;
+          color: #121426;
+        }
+      }
     }
   }
 }

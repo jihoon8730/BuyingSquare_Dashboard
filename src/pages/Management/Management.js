@@ -36,6 +36,53 @@ const Management = () => {
         </div>
         <button className="order-check-button">확인</button>
       </div>
+      <div className="transactionamount">
+        <div className="year">
+          <div className="year-price">
+            <div className="price-title">
+              <p className="title">
+                연간 목표 거래액
+                <span className="color-blue">(21/01/01 - 22/07/01)</span>
+              </p>
+              <p>미달성 금액</p>
+            </div>
+            <div className="amount-display">
+              <p className="total-amount">₩92,261,000</p>
+              <p className="outstanding-amount">₩20,345,641</p>
+            </div>
+            <div className="gauge-full">
+              <div className="gauge" />
+            </div>
+          </div>
+
+          <div className="attainment-rate">
+            <p className="title">달성률</p>
+            <p className="percent">77.9%</p>
+          </div>
+        </div>
+        <div className="month">
+          <div className="month-price">
+            <div className="price-title">
+              <p className="title">
+                당월 목표 거래액
+                <span className="color-blue">(20022 / 07)</span>
+              </p>
+              <p>미달성 금액</p>
+            </div>
+            <div className="amount-display">
+              <p className="total-amount">₩15,400,000</p>
+              <p className="outstanding-amount">₩9,707,105</p>
+            </div>
+            <div className="gauge-full">
+              <div className="gauge" />
+            </div>
+          </div>
+          <div className="attainment-rate">
+            <p className="title">달성률</p>
+            <p className="percent">37%</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
