@@ -1,3 +1,174 @@
 * {
   margin: 0;
+
+  .sales-dashboard {
+    width: 1920px;
+    height: 4297px;
+    padding: 67px 124px;
+    background: #f5f5f5;
+
+    .sales-title-wrap {
+      width: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .workspace-title {
+        width: 301px;
+        height: 41px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 41px;
+        color: #121426;
+      }
+
+      .workspace-border {
+        border-right: 1px solid #777777;
+        height: 16px;
+      }
+
+      .workspace-subtitle {
+        width: 195px;
+        height: 19px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #777777;
+      }
+    }
+    .sales-input-box-wrap {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 1688px;
+      height: 80px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      margin: 16px 0px;
+
+      .order-wrap {
+        display: flex;
+        align-items: center;
+        width: 342px;
+        height: 100%;
+        border-right: 1px solid #dbdbdb;
+        background-color: white;
+
+        .order-type {
+          width: 109px;
+          height: 25px;
+          margin: 28px 0px 27px 38px;
+        }
+      }
+
+      .order-year {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 630px;
+        height: 100%;
+        border-right: 1px solid #dbdbdb;
+        background-color: white;
+      }
+
+      .date-input {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 397px;
+        height: 100%;
+        background-color: white;
+      }
+
+      .sales-button {
+        width: 318px;
+        height: 100%;
+        background-color: black;
+        color: white;
+      }
+    }
+
+    .year-month-target-wrap {
+      width: 1688px;
+      height: 528px;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+
+      .year-target-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 1309px;
+        height: 100%;
+        border: 1px solid #dbdbdb;
+
+        .year-target-graph {
+          width: 1309px;
+          height: 527px;
+        }
+
+        .year-target-data {
+          display: flex;
+          width: 100%;
+          height: 138px;
+          border: 1px solid #dbdbdb;
+
+          .year-target-amount {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 431px;
+            height: 100%;
+            border: 1px solid #dbdbdb;
+
+            .year-target-amount-title-wrap {
+              .year-target-amount-title {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #777777;
+              }
+
+              .year-target-amount-date {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #e44766;
+              }
+            }
+
+            .year-target-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+            }
+          }
+
+          .year-summit-amount {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 431px;
+            height: 100%;
+            border: 1px solid #dbdbdb;
+          }
+
+          .year-target-percent {
+            border: 1px solid #dbdbdb;
+          }
+
+          .year-confirm {
+            border: 1px solid #dbdbdb;
+          }
+        }
+      }
+    }
+  }
 }
