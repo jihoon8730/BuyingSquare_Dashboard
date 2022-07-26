@@ -2,7 +2,7 @@ import React from 'react';
 import './Management.scss';
 
 const Management = () => {
-  return <div>management</div>;
+  return <div className="container"></div>;
 };
 
 export default Management;
