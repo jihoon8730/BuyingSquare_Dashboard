@@ -1,0 +1,29 @@
+.Corporation {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0px;
+
+  .cor-list {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #3a3a3a;
+  }
+
+  .cor-number {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #777777;
+  }
+
+  .cor-percent {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #777777;
+  }
+}

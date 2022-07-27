@@ -93,6 +93,7 @@
     }
 
     .year-month-target-wrap {
+      display: flex;
       width: 1688px;
       height: 528px;
       background-color: white;
@@ -147,6 +148,7 @@
               font-weight: 600;
               font-size: 30px;
               line-height: 38px;
+              text-align: center;
             }
           }
 
@@ -158,15 +160,334 @@
             width: 431px;
             height: 100%;
             border: 1px solid #dbdbdb;
+
+            .year-summit-amount-title {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+              color: #777777;
+            }
+
+            .year-summit-amount-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+              text-align: center;
+            }
           }
 
           .year-target-percent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 270px;
+            height: 100%;
             border: 1px solid #dbdbdb;
+
+            .year-target-percent-title {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+              color: #777777;
+            }
+
+            .year-target-percent-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+              text-align: center;
+            }
           }
 
           .year-confirm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 258px;
+            height: 100%;
             border: 1px solid #dbdbdb;
+
+            .year-confirm-title {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+              color: #777777;
+            }
+            .year-confirm-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+              text-align: center;
+            }
           }
+        }
+      }
+
+      .month-target-whole-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 379px;
+        height: 527px;
+
+        .month-target-big-title {
+          width: 152px;
+          height: 38px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 38px;
+          color: #121426;
+        }
+
+        .month-target-data-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 350px;
+
+          .month-target-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-target-title {
+              width: 66px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-target-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .month-submit-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-submit-title {
+              width: 66px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-submit-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .month-target-percent-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-target-percent-title {
+              width: 50px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-target-percent-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .month-confirm-percent-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-confirm-percent-title {
+              width: 86px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-confirm-percent-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .more-button {
+            width: 267px;
+            height: 54px;
+            left: 1485px;
+            top: 822px;
+
+            background: #1b254b;
+            color: white;
+            border-radius: 4px;
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+
+    .weekly-target-wholewrap {
+      display: flex;
+      width: 1688px;
+      height: 571px;
+      left: 0px;
+      top: 174px;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      margin: 16px 0px;
+
+      .weekly-target-graph-wrap {
+        width: 1204px;
+        height: 458px;
+        border: 1px solid #dbdbdb;
+
+        .weekly-target-title {
+          width: 235px;
+          height: 38px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 38px;
+          margin: 34px 56px;
+        }
+
+        .weekly-target-graph {
+        }
+      }
+
+      .weekly-targer-data-wrap {
+        width: 1204px;
+        height: 110px;
+        border: 1px solid #dbdbdb;
+
+        .weekly-number-wrap {
+          display: flex;
+          margin: 25px 66px;
+          justify-content: space-between;
+
+          .weekly-get-number {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #777777;
+          }
+          .weekly-target-number {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #777777;
+          }
+        }
+
+        .weekly-bar-graph {
+        }
+      }
+
+      .weekly-list-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 484px;
+        height: 571px;
+        background-color: white;
+
+        .weekly-top-wrap {
+          display: flex;
+          flex-direction: column;
+          width: 484px;
+          height: 493px;
+          border: 1px solid #dbdbdb;
+
+          .weekly-list-title {
+            width: 120px;
+            height: 38px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+            margin: 34px 0px 24px 65px;
+          }
+
+          .weekly-corporation-wrap {
+            width: 350px;
+            margin-left: 65px;
+          }
+        }
+
+        .weekly-get {
+          margin: 0 65px;
+        }
+      }
+    }
+
+    .manager-target-big-title {
+      width: 309px;
+      height: 41px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 41px;
+      margin: 50px 0 16px 0;
+    }
+
+    .manager-target-wrap {
+      display: flex;
+      margin: 30px 0;
+    }
+
+    .popular-offer-wholewrap {
+      display: flex;
+      flex-direction: column;
+      width: 1687px;
+      height: 602px;
+      background-color: white;
+
+      .popular-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 100px;
+        margin: 45px;
+
+        .popular-offer-title {
+          width: 200px;
+          height: 38px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 38px;
+        }
+
+        .popular-button {
+          width: 100px;
+          height: 20px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #797979;
+          background: #f9f9f9;
+          border: 1px solid #dbdbdb;
+          border-radius: 4px;
         }
       }
     }

@@ -1,0 +1,36 @@
+.Manager {
+  display: flex;
+  width: 563px;
+  height: 647px;
+  background-color: white;
+  margin-right: 16px;
+
+  .manager-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin: 45px;
+
+    .manager-name {
+      width: 95px;
+      height: 38px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .detail-button {
+      width: 70px;
+      height: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #797979;
+      background: #f9f9f9;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+    }
+  }
+}
