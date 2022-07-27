@@ -1,9 +1,11 @@
 import React from 'react';
+import BrandTable from './components/BrandTable/BrandTable.js';
+import BuyerGroupTable from './components/BuyerGroupTable/BuyerGroupTable.js';
 import './Management.scss';
 
 const Management = () => {
   return (
-    <div className="container">
+    <div className="wrap">
       <div className="workspace">
         <div className="title">
           <h4 className="title-head">Workspace</h4>
@@ -81,6 +83,92 @@ const Management = () => {
             <p className="title">달성률</p>
             <p className="percent">37%</p>
           </div>
+        </div>
+      </div>
+      <div className="type-price">
+        <div className="submit">
+          <div className="title">
+            <p>써밋 금액</p>
+            <i className="fa-solid fa-circle-question" />
+          </div>
+          <h4 className="price">₩ 68,352,347,350</h4>
+        </div>
+        <div className="confirmation">
+          <div className="title">
+            <p>컨펌 금액</p>
+            <i className="fa-solid fa-circle-question" />
+          </div>
+          <h4 className="price">₩ 37,197,538,509</h4>
+        </div>
+        <div className="fullout">
+          <div className="title">
+            <p>풀아웃 금액</p>
+            <i className="fa-solid fa-circle-question" />
+          </div>
+          <h4 className="price">₩ 9,025,365,478</h4>
+        </div>
+        <div className="waiting">
+          <div className="title">
+            <p>웨이팅 금액</p>
+            <i className="fa-solid fa-circle-question" />
+          </div>
+          <h4 className="price">₩ 13,608,542,455</h4>
+        </div>
+        <div className="cancel">
+          <div className="title">
+            <p>캔슬 금액</p>
+            <i className="fa-solid fa-circle-question" />
+          </div>
+          <h4 className="price">₩ 6,520,900,909</h4>
+        </div>
+      </div>
+      <div className="type-count">
+        <div className="submit-count">
+          <p className="title">써밋 건수</p>
+          <p className="count">807 건</p>
+        </div>
+        <div className="confirmation-count">
+          <p className="title">컨펌 건수</p>
+          <p className="count">564 건</p>
+        </div>
+        <div className="all-confirmation-count">
+          <p className="title">전체 컨펌률</p>
+          <p className="count">72.8%</p>
+        </div>
+        <div className="waiting-count">
+          <p className="title">웨이팅 건수</p>
+          <p className="count">131 건</p>
+        </div>
+        <div className="cancel-count">
+          <p className="title">캔슬 건수</p>
+          <p className="count">112 건</p>
+        </div>
+      </div>
+      <h4 className="salesrank-title">매출액 현황</h4>
+      <div className="sales-rank">
+        <div className="brand-ranking">
+          <div className="title">
+            <p>BRAND TOP 10</p>
+          </div>
+          <div className="brand-table">
+            <BrandTable />
+          </div>
+          <div className="brand-view">더보기</div>
+        </div>
+
+        <div className="suppliers-ranking">
+          <div className="title">
+            <p>공급사 TOP 10</p>
+          </div>
+        </div>
+        <div className="buyer-ranking">
+          <div className="title">
+            <p>바이어 그룹별 매출 Top 10</p>
+          </div>
+          <div className="buyer-table">
+            <BuyerGroupTable />
+          </div>
+          <div className="buyer-view">더보기</div>
         </div>
       </div>
     </div>

@@ -1,10 +1,49 @@
+@import '~bootstrap/scss/bootstrap';
+
 $white-color: #ffffff;
 $gray-color: #777777;
 
-.container {
+// ... type-price mixin start ...
+@mixin setTypePrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 320px;
+  height: 160px;
+  padding-left: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  background-color: $white-color;
+}
+
+@mixin setTypePriceTitle {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  color: $gray-color;
+}
+
+@mixin setTypePricePrice {
+  font-size: 30px;
+  font-weight: 700;
+  color: #121426;
+}
+// ... type-price mixin end ...
+
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.wrap {
   width: 1920px;
   height: auto;
   background-color: #f5f5f5;
+  margin-bottom: 0px;
 
   .workspace {
     display: flex;
@@ -153,7 +192,6 @@ $gray-color: #777777;
         .amount-display {
           display: flex;
           justify-content: space-between;
-          margin-top: 8px;
 
           .total-amount {
             font-size: 30px;
@@ -171,7 +209,6 @@ $gray-color: #777777;
         .gauge-full {
           width: 770px;
           height: 17px;
-          margin-top: 18px;
           background: #ebedf1;
           border-radius: 20px;
 
@@ -233,7 +270,6 @@ $gray-color: #777777;
         .amount-display {
           display: flex;
           justify-content: space-between;
-          margin-top: 8px;
 
           .total-amount {
             font-size: 30px;
@@ -251,7 +287,6 @@ $gray-color: #777777;
         .gauge-full {
           width: 770px;
           height: 17px;
-          margin-top: 18px;
           background: #ebedf1;
           border-radius: 20px;
 
@@ -281,6 +316,304 @@ $gray-color: #777777;
           font-weight: 600;
           color: #121426;
         }
+      }
+    }
+  }
+
+  .type-price {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: 150px;
+    margin: 30px auto;
+
+    .submit {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .confirmation {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .fullout {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .waiting {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .cancel {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+  }
+
+  .type-count {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: 100px;
+    margin: 0px auto;
+
+    .submit-count {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 320px;
+      height: 96px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        padding-left: 30px;
+        font-size: 18px;
+        color: $gray-color;
+      }
+
+      .count {
+        padding-right: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #121426;
+      }
+    }
+
+    .confirmation-count {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 320px;
+      height: 96px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        padding-left: 30px;
+        font-size: 18px;
+        color: $gray-color;
+      }
+
+      .count {
+        padding-right: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #121426;
+      }
+    }
+
+    .all-confirmation-count {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 320px;
+      height: 96px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        padding-left: 30px;
+        font-size: 18px;
+        color: $gray-color;
+      }
+
+      .count {
+        padding-right: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #121426;
+      }
+    }
+
+    .waiting-count {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 320px;
+      height: 96px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        padding-left: 30px;
+        font-size: 18px;
+        color: $gray-color;
+      }
+
+      .count {
+        padding-right: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #121426;
+      }
+    }
+
+    .cancel-count {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 320px;
+      height: 96px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        padding-left: 30px;
+        font-size: 18px;
+        color: $gray-color;
+      }
+
+      .count {
+        padding-right: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        color: #121426;
+      }
+    }
+  }
+
+  .salesrank-title {
+    margin: 100px 0px 0px 124px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121426;
+  }
+
+  .sales-rank {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: auto;
+    margin: 20px auto;
+
+    .brand-ranking {
+      width: 563px;
+      height: 647px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+
+      .brand-table {
+        margin-top: 20px;
+      }
+
+      .brand-view {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: #111111;
+      }
+    }
+
+    .suppliers-ranking {
+      width: 563px;
+      height: 647px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+    }
+
+    .buyer-ranking {
+      width: 563px;
+      height: 647px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+
+      .buyer-table {
+        margin-top: 20px;
+      }
+
+      .buyer-view {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: #111111;
       }
     }
   }
