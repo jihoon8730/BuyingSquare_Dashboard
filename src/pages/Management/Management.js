@@ -1,6 +1,7 @@
 import React from 'react';
 import BrandTable from './components/BrandTable/BrandTable.js';
 import BuyerGroupTable from './components/BuyerGroupTable/BuyerGroupTable.js';
+import Rechart from './components/Rechart/Rechart.js';
 import './Management.scss';
 
 const Management = () => {
@@ -159,6 +160,9 @@ const Management = () => {
         <div className="suppliers-ranking">
           <div className="title">
             <p>공급사 TOP 10</p>
+          </div>
+          <div className="suppliers-chart">
+            <Rechart />
           </div>
         </div>
         <div className="buyer-ranking">

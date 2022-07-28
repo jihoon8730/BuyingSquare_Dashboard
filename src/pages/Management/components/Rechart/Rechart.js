@@ -7,76 +7,63 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer,
 } from 'recharts';
 
 const Rechart = () => {
   const data = [
     {
-      name: 'Page A',
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+      name: 'IC',
+      price: 100,
+      '단위 : 1(억)': 99,
     },
     {
-      name: 'Page B',
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+      name: 'BT',
+      '단위 : 1(억)': 70,
     },
     {
-      name: 'Page C',
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
+      name: 'GB',
+      '단위 : 1(억)': 50,
     },
     {
-      name: 'Page D',
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+      name: 'SR',
+      '단위 : 1(억)': 45,
     },
     {
-      name: 'Page E',
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+      name: 'SK',
+      '단위 : 1(억)': 40,
     },
     {
-      name: 'Page F',
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
+      name: 'CC',
+      '단위 : 1(억)': 30,
     },
     {
-      name: 'Page G',
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
+      name: 'CL',
+      '단위 : 1(억)': 25,
+    },
+    {
+      name: 'CL',
+      '단위 : 1(억)': 25,
     },
   ];
   return (
-    <ResponsiveContainer width="700px" height="500px">
-      <BarChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="pv" fill="#8884d8" />
-        <Bar dataKey="uv" fill="#82ca9d" />
-      </BarChart>
-    </ResponsiveContainer>
+    <BarChart
+      width={500}
+      height={500}
+      data={data}
+      margin={{
+        top: 5,
+        right: 30,
+        left: 5,
+        bottom: 5,
+      }}
+    >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="name" />
+      <YAxis dataKey="price" />
+      <Tooltip />
+      <Legend />
+      <Bar dataKey="단위 : 1(억)" fill="#43B5F4" />
+    </BarChart>
   );
 };
 export default Rechart;
