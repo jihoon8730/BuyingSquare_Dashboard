@@ -1,8 +1,13 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Sales.scss';
 import Corporation from './Components/Corporation/Corporation';
 import Manager from './Components/Manager/Manager';
 import SalesTable from './Components/SalesTable/SalesTable';
+import SalesProgress from './Components/SalesProgress/SalesProgress';
+import Alert from './Components/Alert/Alert';
+import OrderChart from './Components/OrderChart/OrderChart';
+import OrderChart2 from './Components/OrderChart2/OrderChart2';
 
 const Sales = () => {
   return (
@@ -100,7 +105,9 @@ const Sales = () => {
                 4월 총 목표 금액:₩6,160,000,000
               </span>
             </div>
-            <div className="weekly-bar-graph">그래프 넣기 16%</div>
+            <div className="container-fluid">
+              <SalesProgress />
+            </div>
           </div>
         </div>
         <div className="weekly-list-wrap">
@@ -136,10 +143,50 @@ const Sales = () => {
       </div>
       <div className="popular-offer-wholewrap">
         <div className="popular-title-wrap">
-          <div className="popular-offer-title">인기오퍼리스트</div>
+          <div className="popular-offer-title">인기 오퍼 리스트</div>
           <button className="popular-button">자세히 보기</button>
         </div>
-        <SalesTable />
+        <div className="container-fluid">
+          <SalesTable />
+        </div>
+      </div>
+      <div className="alert-confirm-wrap">
+        <div className="container-fluid">
+          <Alert
+            alertTitle="알림"
+            allButton="전체 보기"
+            alertLineTitle="[CC]"
+            alertContent="BALENCIAGA 오더가 업데이트 되었습니다"
+            alertTime="3시간 전"
+            alertLineTitle2="[CC]"
+            alertContent2="BALENCIAGA 오더가 업데이트 되었습니다"
+            alertTime2="3시간 전"
+          />
+        </div>
+
+        <div className="container-fluid">
+          <Alert
+            alertTitle="컨펌 대기 오더"
+            allButton="전체 보기"
+            alertLineTitle="[소싱요청]"
+            alertContent="브랜드:TELFA 바이어: 무신사 외 3명"
+            alertTime="1시간 전"
+          />
+        </div>
+      </div>
+      <div className="other-order">
+        <div className="other-order-title-wrap">
+          <div className="other-order-title">기타 오더 현황</div>
+          <button className="other-order-button">편집하기</button>
+        </div>
+        <div className="order-list-wrap">
+          <div className="container-fluid">
+            <OrderChart />
+          </div>
+          <div className="container-fluid">
+            <OrderChart2 />
+          </div>
+        </div>
       </div>
     </div>
   );

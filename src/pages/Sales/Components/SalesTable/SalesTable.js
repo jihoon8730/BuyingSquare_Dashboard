@@ -1,5 +1,6 @@
 import Table from 'react-bootstrap/Table';
 import './SalesTable.scss';
+
 function SalesTable() {
   return (
     <div className="SalesTable">

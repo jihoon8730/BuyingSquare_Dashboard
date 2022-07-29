@@ -16,7 +16,6 @@
       .workspace-title {
         width: 301px;
         height: 41px;
-
         font-style: normal;
         font-weight: 600;
         font-size: 32px;
@@ -25,14 +24,13 @@
       }
 
       .workspace-border {
-        border-right: 1px solid #777777;
+        border-right: 1px solid #dbdbdb;
         height: 16px;
       }
 
       .workspace-subtitle {
         width: 195px;
         height: 19px;
-
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -55,7 +53,7 @@
         align-items: center;
         width: 342px;
         height: 100%;
-        border-right: 1px solid #dbdbdb;
+
         background-color: white;
 
         .order-type {
@@ -71,6 +69,7 @@
         align-items: center;
         width: 630px;
         height: 100%;
+        border-left: 1px solid #dbdbdb;
         border-right: 1px solid #dbdbdb;
         background-color: white;
       }
@@ -98,13 +97,14 @@
       height: 528px;
       background-color: white;
       border: 1px solid #dbdbdb;
+      border-radius: 4px;
 
       .year-target-wrap {
         display: flex;
         flex-direction: column;
         width: 1309px;
         height: 100%;
-        border: 1px solid #dbdbdb;
+        border-right: 1px solid #dbdbdb;
 
         .year-target-graph {
           width: 1309px;
@@ -115,7 +115,6 @@
           display: flex;
           width: 100%;
           height: 138px;
-          border: 1px solid #dbdbdb;
 
           .year-target-amount {
             display: flex;
@@ -124,7 +123,7 @@
             align-items: center;
             width: 431px;
             height: 100%;
-            border: 1px solid #dbdbdb;
+            border-top: 1px solid #dbdbdb;
 
             .year-target-amount-title-wrap {
               .year-target-amount-title {
@@ -159,7 +158,9 @@
             align-items: center;
             width: 431px;
             height: 100%;
-            border: 1px solid #dbdbdb;
+            border-top: 1px solid #dbdbdb;
+            border-left: 1px solid #dbdbdb;
+            border-right: 1px solid #dbdbdb;
 
             .year-summit-amount-title {
               font-weight: 400;
@@ -185,7 +186,7 @@
             align-items: center;
             width: 270px;
             height: 100%;
-            border: 1px solid #dbdbdb;
+            border-top: 1px solid #dbdbdb;
 
             .year-target-percent-title {
               font-weight: 400;
@@ -211,7 +212,8 @@
             align-items: center;
             width: 258px;
             height: 100%;
-            border: 1px solid #dbdbdb;
+            border-top: 1px solid #dbdbdb;
+            border-left: 1px solid #dbdbdb;
 
             .year-confirm-title {
               font-weight: 400;
@@ -340,6 +342,7 @@
 
             background: #1b254b;
             color: white;
+            border: 1px solid #dbdbdb;
             border-radius: 4px;
             margin-top: 100px;
           }
@@ -355,52 +358,58 @@
       top: 174px;
       background-color: white;
       border: 1px solid #dbdbdb;
+      border-radius: 4px;
       margin: 16px 0px;
 
-      .weekly-target-graph-wrap {
+      .weekly-left-wrap {
         width: 1204px;
-        height: 458px;
-        border: 1px solid #dbdbdb;
+        height: 571px;
+        .weekly-target-graph-wrap {
+          width: 1204px;
+          height: 420px;
 
-        .weekly-target-title {
-          width: 235px;
-          height: 38px;
-          font-style: normal;
-          font-weight: 600;
-          font-size: 30px;
-          line-height: 38px;
-          margin: 34px 56px;
-        }
-
-        .weekly-target-graph {
-        }
-      }
-
-      .weekly-targer-data-wrap {
-        width: 1204px;
-        height: 110px;
-        border: 1px solid #dbdbdb;
-
-        .weekly-number-wrap {
-          display: flex;
-          margin: 25px 66px;
-          justify-content: space-between;
-
-          .weekly-get-number {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: #777777;
+          .weekly-target-title {
+            width: 235px;
+            height: 38px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+            margin: 34px 56px;
           }
-          .weekly-target-number {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: #777777;
+
+          .weekly-target-graph {
           }
         }
 
-        .weekly-bar-graph {
+        .weekly-targer-data-wrap {
+          width: 1204px;
+          height: 110px;
+          border-top: 1px solid #dbdbdb;
+
+          .weekly-number-wrap {
+            display: flex;
+            margin: 25px 66px;
+            justify-content: space-between;
+            width: 1000px;
+
+            .weekly-get-number {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              color: #777777;
+            }
+            .weekly-target-number {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              color: #777777;
+            }
+          }
+
+          .container-fluid {
+            width: 1000px;
+          }
         }
       }
 
@@ -408,15 +417,14 @@
         display: flex;
         flex-direction: column;
         width: 484px;
-        height: 571px;
-        background-color: white;
+        height: 569px;
+        border-left: 1px solid #dbdbdb;
 
         .weekly-top-wrap {
           display: flex;
           flex-direction: column;
-          width: 484px;
+          width: 480px;
           height: 493px;
-          border: 1px solid #dbdbdb;
 
           .weekly-list-title {
             width: 120px;
@@ -459,8 +467,10 @@
       display: flex;
       flex-direction: column;
       width: 1687px;
-      height: 602px;
+      height: 700px;
       background-color: white;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
 
       .popular-title-wrap {
         display: flex;
@@ -479,8 +489,8 @@
         }
 
         .popular-button {
-          width: 100px;
-          height: 20px;
+          width: 132px;
+          height: 40px;
           font-weight: 400;
           font-size: 16px;
           line-height: 20px;
@@ -489,6 +499,64 @@
           border: 1px solid #dbdbdb;
           border-radius: 4px;
         }
+      }
+
+      .container-fluid {
+        padding: 45px;
+      }
+    }
+
+    .alert-confirm-wrap {
+      display: flex;
+      justify-content: space-around;
+
+      .container-fluid {
+      }
+
+      .container-fluid {
+      }
+    }
+
+    .other-order {
+      width: 1671px;
+      height: 700px;
+      background-color: white;
+      margin-top: 20px;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+
+      .other-order-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 100px;
+        margin: 45px;
+
+        .other-order-title {
+          width: 200px;
+          height: 38px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 38px;
+        }
+
+        .other-order-button {
+          width: 132px;
+          height: 40px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #797979;
+          background: #f9f9f9;
+          border: 1px solid #dbdbdb;
+          border-radius: 4px;
+        }
+      }
+
+      .order-list-wrap {
+        display: flex;
+        margin: 0 20px;
       }
     }
   }
