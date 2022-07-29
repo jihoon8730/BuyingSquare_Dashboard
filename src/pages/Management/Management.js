@@ -3,6 +3,9 @@ import BrandTable from './components/BrandTable/BrandTable.js';
 import BuyerGroupTable from './components/BuyerGroupTable/BuyerGroupTable.js';
 import Rechart from './components/Rechart/Rechart.js';
 import ManagerPieChart from './components/ManagerPieChart/ManagerPieChart.js';
+import OfferStatusTable from './components/OfferStatusTable/OfferStatusTable.js';
+import SubmitAndConfirmChart from './components/SubmitAndConfirmChart/SubmitAndConfirmChart.js';
+import MonthOrderStatusTable from './components/MonthOrderStatusTable/MonthOrderStatusTable.js';
 import './Management.scss';
 
 const Management = () => {
@@ -224,8 +227,24 @@ const Management = () => {
           </div>
         </div>
       </div>
-      <div className="offer-status-title">오퍼현황</div>
-      <div className="offer-status" />
+      <div className="offer-status">
+        <div className="offer-status-title">오퍼현황</div>
+        <OfferStatusTable />
+      </div>
+      <div className="submitandconfirm">
+        <div className="submitandconfirm-title">
+          누적 / 월별 SUBMIT & CONFIRM 금액
+        </div>
+        <div className="submitandconfirm-chart">
+          <SubmitAndConfirmChart />
+        </div>
+      </div>
+      <div className="month-order-status">
+        <div className="month-order-status-title">월별 오더 현황</div>
+        <div className="month-order-status-table">
+          <MonthOrderStatusTable />
+        </div>
+      </div>
     </div>
   );
 };
