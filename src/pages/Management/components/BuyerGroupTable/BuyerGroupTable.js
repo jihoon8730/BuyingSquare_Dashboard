@@ -17,7 +17,7 @@ function BuyerGroupTable() {
             <td>1위</td>
             <td>리앤한</td>
             <td>₩ 26,233,335,375</td>
-            <td>34.29 %</td>
+            <td>34.29 %</td>4
           </tr>
           <tr>
             <td>2위</td>

@@ -621,4 +621,93 @@ ul {
       }
     }
   }
+
+  .manager-title {
+    margin: 50px 0px 0px 124px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121426;
+  }
+
+  .manager-achievement {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: auto;
+    margin: 20px auto;
+
+    .hoon {
+      width: 563px;
+      height: 347px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+    }
+
+    .demie {
+      width: 563px;
+      height: 347px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+    }
+
+    .kelly {
+      width: 563px;
+      height: 347px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+    }
+
+    .manager-allprice-title {
+      margin-top: 20px;
+      font-size: 25px;
+      text-align: center;
+      color: #333333;
+    }
+
+    .manager-price {
+      margin-top: 20px;
+      font-size: 18px;
+      color: $gray-color;
+      text-align: center;
+    }
+  }
+  .offer-status-title {
+    margin: 50px 0px 0px 124px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121426;
+  }
+
+  .offer-status {
+    width: 1688px;
+    height: 600px;
+    margin: 30px auto;
+    background-color: $white-color;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+  }
 }

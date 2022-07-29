@@ -2,6 +2,7 @@ import React from 'react';
 import BrandTable from './components/BrandTable/BrandTable.js';
 import BuyerGroupTable from './components/BuyerGroupTable/BuyerGroupTable.js';
 import Rechart from './components/Rechart/Rechart.js';
+import ManagerPieChart from './components/ManagerPieChart/ManagerPieChart.js';
 import './Management.scss';
 
 const Management = () => {
@@ -175,6 +176,56 @@ const Management = () => {
           <div className="buyer-view">더보기</div>
         </div>
       </div>
+      <div className="manager-title">매니저별 목표와 달성률</div>
+      <div className="manager-achievement">
+        <div className="hoon">
+          <div className="title">
+            <p>HOON</p>
+          </div>
+          <div className="manager-piechart">
+            <ManagerPieChart />
+          </div>
+          <h4 className="manager-allprice-title">
+            전체 목표 금액 : 1,127,588,530
+          </h4>
+          <div className="manager-price">
+            <p className="price">달성 금액 : ₩648,363,404</p>
+            <p className="price">미달 금액 : ₩528,363,404</p>
+          </div>
+        </div>
+        <div className="demie">
+          <div className="title">
+            <p>DEMIE</p>
+          </div>
+          <div className="manager-piechart">
+            <ManagerPieChart />
+          </div>
+          <h4 className="manager-allprice-title">
+            전체 목표 금액 : 1,127,588,530
+          </h4>
+          <div className="manager-price">
+            <p className="price">달성 금액 : ₩648,363,404</p>
+            <p className="price">미달 금액 : ₩528,363,404</p>
+          </div>
+        </div>
+        <div className="kelly">
+          <div className="title">
+            <p>KELLY</p>
+          </div>
+          <div className="manager-piechart">
+            <ManagerPieChart />
+          </div>
+          <h4 className="manager-allprice-title">
+            전체 목표 금액 : 1,127,588,530
+          </h4>
+          <div className="manager-price">
+            <p className="price">달성 금액 : ₩648,363,404</p>
+            <p className="price">미달 금액 : ₩528,363,404</p>
+          </div>
+        </div>
+      </div>
+      <div className="offer-status-title">오퍼현황</div>
+      <div className="offer-status" />
     </div>
   );
 };
