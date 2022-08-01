@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Nav.scss';
 
 const Nav = () => {
+  const [pageSelct, setPageSelct] = useState(0);
+  const naviGate = useNavigate();
+  const onGotoManagementPage = () => {
+    naviGate('/management');
+    setPageSelct(0);
+  };
+  const onGotoSalesPage = () => {
+    naviGate('/sales');
+    setPageSelct(1);
+  };
+  const onGotoSourcingPage = () => {
+    naviGate('/sourcing');
+    setPageSelct(2);
+  };
+  const onGotoOperation = () => {
+    naviGate('/operation');
+    setPageSelct(3);
+  };
+
   return (
     <>
       {' '}
@@ -21,10 +41,30 @@ const Nav = () => {
       <div className="header">
         <div className="header-list">
           <ul className="lists">
-            <li className="list-all">전체</li>
-            <li>세일즈</li>
-            <li>소싱</li>
-            <li>오퍼레이션</li>
+            <li
+              className={pageSelct === 0 ? 'list-all' : 'couser-pointer'}
+              onClick={onGotoManagementPage}
+            >
+              전체
+            </li>
+            <li
+              className={pageSelct === 1 ? 'list-all' : 'couser-pointer'}
+              onClick={onGotoSalesPage}
+            >
+              세일즈
+            </li>
+            <li
+              className={pageSelct === 2 ? 'list-all' : 'couser-pointer'}
+              onClick={onGotoSourcingPage}
+            >
+              소싱
+            </li>
+            <li
+              className={pageSelct === 3 ? 'list-all' : 'couser-pointer'}
+              onClick={onGotoOperation}
+            >
+              오퍼레이션
+            </li>
           </ul>
         </div>
         <div className="header-search">
