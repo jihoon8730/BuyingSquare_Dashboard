@@ -8,6 +8,9 @@ import SalesProgress from './Components/SalesProgress/SalesProgress';
 import Alert from './Components/Alert/Alert';
 import OrderChart from './Components/OrderChart/OrderChart';
 import OrderChart2 from './Components/OrderChart2/OrderChart2';
+import Graph from './Components/Graph/Graph';
+import HalfCircle from './Components/HalfCircle/HalfCircle';
+import LineGraph from './Components/LineGraph/LineGraph';
 
 const Sales = () => {
   return (
@@ -38,7 +41,8 @@ const Sales = () => {
       </div>
       <div className="year-month-target-wrap">
         <div className="year-target-wrap">
-          <div className="year-target-graph">그래프넣기</div>
+          <Graph />
+          <div className="year-target-graph" />
 
           <div className="year-target-data">
             <div className="year-target-amount">
@@ -93,7 +97,9 @@ const Sales = () => {
         <div className="weekly-left-wrap">
           <div className="weekly-target-graph-wrap">
             <div className="weekly-target-title">주간 목표와 달성률</div>
-            <div className="weekly-target-graph">그래프넣기</div>
+            <div className="weekly-target-graph">
+              <LineGraph />
+            </div>
           </div>
 
           <div className="weekly-targer-data-wrap">
@@ -137,9 +143,36 @@ const Sales = () => {
       </div>
       <div className="manager-target-big-title">매니저별 목표와 달성률</div>
       <div className="manager-target-wrap">
-        <Manager managerName="HOON" detailButton="상세보기" />
-        <Manager managerName="DEMIE" detailButton="상세보기" />
-        <Manager managerName="HOON" detailButton="상세보기" />
+        <Manager
+          managerName="HOON"
+          detailButton="상세보기"
+          managerGraph=<HalfCircle />
+          managerAmount="전체 목표 금액: 1,127,588,530"
+          managerGetTitle="달성금액: 634,000,213"
+          managerGet=<SalesProgress />
+          managerPeriodTitle="남은기간: 9일"
+          managerPeriod=<SalesProgress />
+        />
+        <Manager
+          managerName="DEMIE"
+          detailButton="상세보기"
+          managerGraph=<HalfCircle />
+          managerAmount="전체 목표 금액: 1,127,588,530"
+          managerGetTitle="달성금액: 634,000,213"
+          managerGet=<SalesProgress />
+          managerPeriodTitle="남은기간: 9일"
+          managerPeriod=<SalesProgress />
+        />
+        <Manager
+          managerName="HOON"
+          detailButton="상세보기"
+          managerGraph=<HalfCircle />
+          managerAmount="전체 목표 금액: 1,127,588,530"
+          managerGetTitle="달성금액: 634,000,213"
+          managerGet=<SalesProgress />
+          managerPeriodTitle="남은기간: 9일"
+          managerPeriod=<SalesProgress />
+        />
       </div>
       <div className="popular-offer-wholewrap">
         <div className="popular-title-wrap">

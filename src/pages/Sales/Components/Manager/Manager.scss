@@ -1,5 +1,6 @@
 .Manager {
   display: flex;
+  flex-direction: column;
   width: 563px;
   height: 647px;
   background-color: white;
@@ -34,5 +35,49 @@
       border: 1px solid #dbdbdb;
       border-radius: 4px;
     }
+  }
+
+  .manager-graph-wrap {
+    width: 100px;
+    height: 250px;
+  }
+
+  .manager-target-amount {
+    width: 100%;
+    height: 36px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .manager-get-title {
+    width: 179px;
+    height: 20px;
+    margin: 20px 0 0 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #777777;
+  }
+
+  .manager-get-bar-graph {
+    width: 341px;
+    height: 10px;
+    margin: 20px 0 0 100px;
+  }
+
+  .manager-period-title {
+    width: 179px;
+    height: 20px;
+    margin: 20px 0 0 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #777777;
+  }
+  .manager-period-bar-graph {
+    width: 341px;
+    height: 10px;
+    margin: 20px 0 0 100px;
   }
 }
