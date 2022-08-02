@@ -58,13 +58,6 @@ ul {
     background-color: $white-color;
 
     .order-all {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 342px;
-      height: 88px;
-      border-right: 1px solid #dbdbdb;
-
       .type {
         font-size: 18px;
         color: #121426;
