@@ -1,3 +1,563 @@
 * {
   margin: 0;
+
+  .sales-dashboard {
+    width: 1920px;
+    height: 4297px;
+    padding: 67px 124px;
+    background: #f5f5f5;
+
+    .sales-title-wrap {
+      width: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .workspace-title {
+        width: 301px;
+        height: 41px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 41px;
+        color: #121426;
+      }
+
+      .workspace-border {
+        border-right: 1px solid #dbdbdb;
+        height: 16px;
+      }
+
+      .workspace-subtitle {
+        width: 195px;
+        height: 19px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #777777;
+      }
+    }
+    .sales-input-box-wrap {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 1688px;
+      height: 80px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      margin: 16px 0px;
+
+      .order-wrap {
+        display: flex;
+        align-items: center;
+        width: 342px;
+        height: 100%;
+
+        background-color: white;
+
+        .order-type {
+          width: 109px;
+          height: 25px;
+          margin: 28px 0px 27px 38px;
+        }
+      }
+
+      .order-year {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 630px;
+        height: 100%;
+        border-left: 1px solid #dbdbdb;
+        border-right: 1px solid #dbdbdb;
+        background-color: white;
+      }
+
+      .date-input {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 397px;
+        height: 100%;
+        background-color: white;
+      }
+
+      .sales-button {
+        width: 318px;
+        height: 100%;
+        background-color: black;
+        color: white;
+      }
+    }
+
+    .year-month-target-wrap {
+      display: flex;
+      width: 1688px;
+      height: 528px;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+
+      .year-target-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 1309px;
+        height: 100%;
+        border-right: 1px solid #dbdbdb;
+
+        .year-target-graph {
+          width: 1309px;
+          height: 527px;
+        }
+
+        .year-target-data {
+          display: flex;
+          width: 100%;
+          height: 138px;
+
+          .year-target-amount {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 431px;
+            height: 100%;
+            border-top: 1px solid #dbdbdb;
+
+            .year-target-amount-title-wrap {
+              .year-target-amount-title {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #777777;
+              }
+
+              .year-target-amount-date {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #e44766;
+              }
+            }
+
+            .year-target-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+              text-align: center;
+            }
+          }
+
+          .year-summit-amount {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 431px;
+            height: 100%;
+            border-top: 1px solid #dbdbdb;
+            border-left: 1px solid #dbdbdb;
+            border-right: 1px solid #dbdbdb;
+
+            .year-summit-amount-title {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+              color: #777777;
+            }
+
+            .year-summit-amount-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+              text-align: center;
+            }
+          }
+
+          .year-target-percent {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 270px;
+            height: 100%;
+            border-top: 1px solid #dbdbdb;
+
+            .year-target-percent-title {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+              color: #777777;
+            }
+
+            .year-target-percent-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+              text-align: center;
+            }
+          }
+
+          .year-confirm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 258px;
+            height: 100%;
+            border-top: 1px solid #dbdbdb;
+            border-left: 1px solid #dbdbdb;
+
+            .year-confirm-title {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 25px;
+              color: #777777;
+            }
+            .year-confirm-number {
+              width: 208px;
+              height: 38px;
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 38px;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .month-target-whole-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 379px;
+        height: 527px;
+
+        .month-target-big-title {
+          width: 152px;
+          height: 38px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 38px;
+          color: #121426;
+        }
+
+        .month-target-data-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 350px;
+
+          .month-target-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-target-title {
+              width: 66px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-target-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .month-submit-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-submit-title {
+              width: 66px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-submit-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .month-target-percent-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-target-percent-title {
+              width: 50px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-target-percent-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .month-confirm-percent-wrap {
+            display: flex;
+            justify-content: space-around;
+            width: 255px;
+
+            .month-confirm-percent-title {
+              width: 86px;
+              height: 18px;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 18px;
+            }
+
+            .month-confirm-percent-number {
+              width: 134px;
+              height: 18px;
+            }
+          }
+
+          .more-button {
+            width: 267px;
+            height: 54px;
+            left: 1485px;
+            top: 822px;
+
+            background: #1b254b;
+            color: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+
+    .weekly-target-wholewrap {
+      display: flex;
+      width: 1688px;
+      height: 571px;
+      left: 0px;
+      top: 174px;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      margin: 16px 0px;
+
+      .weekly-left-wrap {
+        width: 1204px;
+        height: 571px;
+        .weekly-target-graph-wrap {
+          width: 1204px;
+          height: 420px;
+
+          .weekly-target-title {
+            width: 235px;
+            height: 38px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+            margin: 34px 56px;
+          }
+
+          .weekly-target-graph {
+          }
+        }
+
+        .weekly-targer-data-wrap {
+          width: 1204px;
+          height: 110px;
+          border-top: 1px solid #dbdbdb;
+
+          .weekly-number-wrap {
+            display: flex;
+            margin: 25px 66px;
+            justify-content: space-between;
+            width: 1000px;
+
+            .weekly-get-number {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              color: #777777;
+            }
+            .weekly-target-number {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
+              color: #777777;
+            }
+          }
+
+          .container-fluid {
+            width: 1000px;
+          }
+        }
+      }
+
+      .weekly-list-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 484px;
+        height: 569px;
+        border-left: 1px solid #dbdbdb;
+
+        .weekly-top-wrap {
+          display: flex;
+          flex-direction: column;
+          width: 480px;
+          height: 493px;
+
+          .weekly-list-title {
+            width: 120px;
+            height: 38px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+            margin: 34px 0px 24px 65px;
+          }
+
+          .weekly-corporation-wrap {
+            width: 350px;
+            margin-left: 65px;
+          }
+        }
+
+        .weekly-get {
+          margin: 0 65px;
+        }
+      }
+    }
+
+    .manager-target-big-title {
+      width: 309px;
+      height: 41px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 41px;
+      margin: 50px 0 16px 0;
+    }
+
+    .manager-target-wrap {
+      display: flex;
+      margin: 30px 0;
+    }
+
+    .popular-offer-wholewrap {
+      display: flex;
+      flex-direction: column;
+      width: 1687px;
+      height: 700px;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+
+      .popular-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 100px;
+        margin: 45px;
+
+        .popular-offer-title {
+          width: 200px;
+          height: 38px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 38px;
+        }
+
+        .popular-button {
+          width: 132px;
+          height: 40px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #797979;
+          background: #f9f9f9;
+          border: 1px solid #dbdbdb;
+          border-radius: 4px;
+        }
+      }
+
+      .container-fluid {
+        padding: 45px;
+      }
+    }
+
+    .alert-confirm-wrap {
+      display: flex;
+      justify-content: space-around;
+
+      .container-fluid {
+      }
+
+      .container-fluid {
+      }
+    }
+
+    .other-order {
+      width: 1671px;
+      height: 700px;
+      background-color: white;
+      margin-top: 20px;
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+
+      .other-order-title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        height: 100px;
+        margin: 45px;
+
+        .other-order-title {
+          width: 200px;
+          height: 38px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 38px;
+        }
+
+        .other-order-button {
+          width: 132px;
+          height: 40px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #797979;
+          background: #f9f9f9;
+          border: 1px solid #dbdbdb;
+          border-radius: 4px;
+        }
+      }
+
+      .order-list-wrap {
+        display: flex;
+        margin: 0 20px;
+      }
+    }
+  }
 }
