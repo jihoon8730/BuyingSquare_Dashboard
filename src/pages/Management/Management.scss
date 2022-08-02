@@ -1,4 +1,719 @@
-.container {
+@import '~bootstrap/scss/bootstrap';
+
+$white-color: #ffffff;
+$gray-color: #777777;
+
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.wrap {
   width: 1920px;
   height: auto;
+  background-color: #f5f5f5;
+  margin-bottom: 0px;
+
+  .workspace {
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 117px 0px 124px;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .title-head {
+        font-size: 32px;
+        font-weight: 600;
+        color: #121426;
+      }
+
+      .title-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $gray-color;
+      }
+    }
+
+    .content {
+      font-size: 14px;
+      color: $gray-color;
+    }
+  }
+
+  .ordertype {
+    display: flex;
+    width: 1688px;
+    height: 88px;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    margin: 30px auto;
+    background-color: $white-color;
+
+    .order-all {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 342px;
+      height: 88px;
+      border-right: 1px solid #dbdbdb;
+
+      .type {
+        font-size: 18px;
+        color: #121426;
+        padding-left: 38px;
+      }
+
+      .type-downarrow {
+        padding-right: 34px;
+      }
+    }
+
+    .order-date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 630px;
+      border-right: 1px solid #dbdbdb;
+
+      .dates {
+        display: flex;
+        gap: 50px;
+        padding: 0px;
+        font-size: 18px;
+        color: #121426;
+        list-style: none;
+      }
+    }
+
+    .date-input {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 397px;
+      border-right: 1px solid #dbdbdb;
+
+      .date-selct {
+        display: flex;
+        gap: 10px;
+        padding-left: 43px;
+
+        .icon {
+          font-size: 20px;
+        }
+
+        .input {
+          font-size: 18px;
+          color: #121426;
+        }
+      }
+
+      .input-downarrow {
+        padding-right: 26px;
+      }
+    }
+
+    .order-check-button {
+      width: 318px;
+      border: 0px;
+      border-radius: 0px 6px 6px 0px;
+      font-size: 18px;
+      background-color: #333333;
+      color: $white-color;
+    }
+  }
+
+  // transactionamount start ...
+  @mixin transactionamountYear {
+    width: 830px;
+    height: 268px;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    background-color: $white-color;
+  }
+
+  @mixin yearPrice {
+    height: 176px;
+    padding: 0px 30px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  @mixin priceTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-size: 18px;
+    color: $gray-color;
+  }
+  // transactionamount end ...
+
+  .transactionamount {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    .year {
+      @include transactionamountYear;
+
+      .year-price {
+        @include yearPrice;
+
+        .price-title {
+          @include priceTitle;
+
+          .title {
+            .color-blue {
+              color: #007def;
+            }
+          }
+        }
+
+        .amount-display {
+          display: flex;
+          justify-content: space-between;
+
+          .total-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #121426;
+          }
+
+          .outstanding-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fa5400;
+          }
+        }
+
+        .gauge-full {
+          width: 770px;
+          height: 17px;
+          background: #ebedf1;
+          border-radius: 20px;
+
+          .gauge {
+            width: 526px;
+            height: 17px;
+            background: linear-gradient(270deg, #121426 -0.64%, #007def 99.25%);
+            border-radius: 20px;
+          }
+        }
+      }
+
+      .attainment-rate {
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+          font-size: 18px;
+          color: $gray-color;
+        }
+
+        .percent {
+          font-size: 30px;
+          font-weight: 600;
+          color: #121426;
+        }
+      }
+    }
+
+    .month {
+      @include transactionamountYear;
+
+      .month-price {
+        @include yearPrice;
+
+        .price-title {
+          @include priceTitle;
+
+          .title {
+            .color-blue {
+              color: #007def;
+            }
+          }
+        }
+
+        .amount-display {
+          display: flex;
+          justify-content: space-between;
+
+          .total-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #121426;
+          }
+
+          .outstanding-amount {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fa5400;
+          }
+        }
+
+        .gauge-full {
+          width: 770px;
+          height: 17px;
+          background: #ebedf1;
+          border-radius: 20px;
+
+          .gauge {
+            width: 256px;
+            height: 17px;
+            background: linear-gradient(270deg, #121426 -0.64%, #007def 99.25%);
+            border-radius: 20px;
+          }
+        }
+      }
+
+      .attainment-rate {
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .title {
+          font-size: 18px;
+          color: $gray-color;
+        }
+
+        .percent {
+          font-size: 30px;
+          font-weight: 600;
+          color: #121426;
+        }
+      }
+    }
+  }
+
+  // ... type-price mixin start ...
+  @mixin setTypePrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 320px;
+    height: 160px;
+    padding-left: 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    background-color: $white-color;
+  }
+
+  @mixin setTypePriceTitle {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    color: $gray-color;
+  }
+
+  @mixin setTypePricePrice {
+    font-size: 30px;
+    font-weight: 700;
+    color: #121426;
+  }
+  // ... type-price mixin end ...
+
+  .type-price {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: 150px;
+    margin: 30px auto;
+
+    .submit {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .confirmation {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .fullout {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .waiting {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+
+    .cancel {
+      @include setTypePrice;
+
+      .title {
+        @include setTypePriceTitle;
+
+        i {
+          color: orange;
+        }
+      }
+
+      .price {
+        @include setTypePricePrice;
+      }
+    }
+  }
+
+  // type-count start ...
+  @mixin count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    height: 96px;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+    background-color: $white-color;
+  }
+
+  @mixin countTitle {
+    padding-left: 30px;
+    font-size: 18px;
+    color: $gray-color;
+  }
+
+  @mixin countCount {
+    padding-right: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #121426;
+  }
+  // type-count end ...
+
+  .type-count {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: 100px;
+    margin: 0px auto;
+
+    .submit-count {
+      @include count;
+
+      .title {
+        @include countTitle;
+      }
+
+      .count {
+        @include countCount;
+      }
+    }
+
+    .confirmation-count {
+      @include count;
+
+      .title {
+        @include countTitle;
+      }
+
+      .count {
+        @include countCount;
+      }
+    }
+
+    .all-confirmation-count {
+      @include count;
+
+      .title {
+        @include countTitle;
+      }
+
+      .count {
+        @include countCount;
+      }
+    }
+
+    .waiting-count {
+      @include count;
+
+      .title {
+        @include countTitle;
+      }
+
+      .count {
+        @include countCount;
+      }
+    }
+
+    .cancel-count {
+      @include count;
+
+      .title {
+        @include countTitle;
+      }
+
+      .count {
+        @include countCount;
+      }
+    }
+  }
+
+  .salesrank-title {
+    margin: 100px 0px 0px 124px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121426;
+  }
+
+  .sales-rank {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: auto;
+    margin: 20px auto;
+
+    .brand-ranking {
+      width: 563px;
+      height: 647px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+
+      .brand-table {
+        margin-top: 20px;
+      }
+
+      .brand-view {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: #111111;
+      }
+    }
+
+    .suppliers-ranking {
+      width: 563px;
+      height: 647px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+
+      .suppliers-chart {
+        margin-top: 50px;
+      }
+    }
+
+    .buyer-ranking {
+      width: 563px;
+      height: 647px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+
+      .buyer-table {
+        margin-top: 20px;
+      }
+
+      .buyer-view {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: #111111;
+      }
+    }
+  }
+
+  .manager-title {
+    margin: 50px 0px 0px 124px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #121426;
+  }
+
+  .manager-achievement {
+    display: flex;
+    gap: 20px;
+    width: 1688px;
+    height: auto;
+    margin: 20px auto;
+
+    .hoon {
+      width: 563px;
+      height: 347px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+    }
+
+    .demie {
+      width: 563px;
+      height: 347px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+    }
+
+    .kelly {
+      width: 563px;
+      height: 347px;
+      padding: 40px 30px;
+      border: 1px solid #dbdbdb;
+      border-radius: 6px;
+      background-color: $white-color;
+
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #121426;
+      }
+    }
+
+    .manager-allprice-title {
+      margin-top: 20px;
+      font-size: 25px;
+      text-align: center;
+      color: #333333;
+    }
+
+    .manager-price {
+      margin-top: 20px;
+      font-size: 18px;
+      color: $gray-color;
+      text-align: center;
+    }
+  }
+
+  .offer-status {
+    width: 1688px;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: $white-color;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+
+    .offer-status-title {
+      margin-bottom: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #121426;
+    }
+  }
+
+  .submitandconfirm {
+    width: 1688px;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: $white-color;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+
+    .submitandconfirm-title {
+      margin-bottom: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #121426;
+    }
+  }
+
+  .month-order-status {
+    width: 1688px;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: $white-color;
+    border: 1px solid #dbdbdb;
+    border-radius: 6px;
+
+    .month-order-status-title {
+      margin-bottom: 30px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #121426;
+    }
+  }
 }
