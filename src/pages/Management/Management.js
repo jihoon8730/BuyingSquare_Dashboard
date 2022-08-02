@@ -6,6 +6,7 @@ import ManagerPieChart from './components/ManagerPieChart/ManagerPieChart.js';
 import OfferStatusTable from './components/OfferStatusTable/OfferStatusTable.js';
 import SubmitAndConfirmChart from './components/SubmitAndConfirmChart/SubmitAndConfirmChart.js';
 import MonthOrderStatusTable from './components/MonthOrderStatusTable/MonthOrderStatusTable.js';
+import OrderTypeDropdown from './components/OrderTypeDropdown/OrderTypeDropdown.js';
 import './Management.scss';
 
 const Management = () => {
@@ -20,8 +21,7 @@ const Management = () => {
       </div>
       <div className="ordertype">
         <div className="order-all">
-          <p className="type">전체 오더 타입</p>
-          <i className="type-downarrow fa-solid fa-chevron-down" />
+          <OrderTypeDropdown />
         </div>
         <div className="order-date">
           <ul className="dates">
